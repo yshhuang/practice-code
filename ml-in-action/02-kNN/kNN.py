@@ -97,7 +97,7 @@ def dating_class_test():
     num_test_vecs = int(m * ho_ratio)
     error_count = 0.00
     for i in range(num_test_vecs):
-        classifier_result = classify0(norm_mat[i, :], norm_mat[num_test_vecs:m, :], dating_labels[num_test_vecs:m], 4)
+        classifier_result = classify0(norm_mat[i, :], norm_mat[num_test_vecs:m, :], dating_labels[num_test_vecs:m], 7)
 
         if classifier_result != dating_labels[i]:
             print("分类结果：%d\t真实类别：%d" % (classifier_result, dating_labels[i]))
@@ -131,8 +131,8 @@ if __name__ == '__main__':
     # file = "datingTestSet.txt"
     # datingDataMat, datingLabels = file2matrix(file)
     # auto_norm(datingDataMat)
-    # dating_class_test()
-    classify_person()
+    dating_class_test()
+    # classify_person()
     # fig = plt.figure()
     # ax = fig.add_subplot(111)
     # ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2], 15 * array(datingLabels), 15 * array(datingLabels))
