@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "c++/hello.cpp",
+                // "add.cpp",
+                // "sub.cpp",
+                "-o",
+                "hello.out"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "build-debug",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "hello.cpp",
+                "add.cpp",
+                "sub.cpp",
+                "-o",
+                "debug.out"
+            ]
+        }
+    ]
+}
