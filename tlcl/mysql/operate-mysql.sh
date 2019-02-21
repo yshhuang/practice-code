@@ -29,7 +29,6 @@ sql="update kuaikan.topic  set title='400' where id=400;"
 $MYSQL -e "$sql"
 
 #4.查询数据
-sql="select * from kuaikan.topic where id=400"
+sql="select * from kuaikan.topic"
 result="$($MYSQL -e "$sql")"
 echo $result 
-echo $MYSQL_PWD
