@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Volumes/develop/code-repository/practice-code/c++/learning-opencv3/main.cpp" "/Volumes/develop/code-repository/practice-code/c++/learning-opencv3/cmake-build-debug/CMakeFiles/learning_opencv3.dir/main.cpp.o"
+  "/Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp" "/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles/learning_opencv3.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

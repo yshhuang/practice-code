@@ -1,0 +1,3 @@
+/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles/learning_opencv3.dir
