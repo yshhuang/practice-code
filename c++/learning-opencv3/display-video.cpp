@@ -1,7 +1,3 @@
-//
-// Created by yshhuang on 2019-02-28.
-//
-
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/imgproc/imgproc.hpp"
 
