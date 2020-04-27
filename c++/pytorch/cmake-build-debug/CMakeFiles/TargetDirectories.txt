@@ -1,0 +1,3 @@
+/Volumes/develop/code-repository/practice-code/c++/pytorch/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/develop/code-repository/practice-code/c++/pytorch/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/develop/code-repository/practice-code/c++/pytorch/cmake-build-debug/CMakeFiles/pytorch.dir

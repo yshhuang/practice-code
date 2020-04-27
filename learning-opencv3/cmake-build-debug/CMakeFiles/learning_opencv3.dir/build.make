@@ -60,15 +60,15 @@ include CMakeFiles/learning_opencv3.dir/flags.make
 CMakeFiles/learning_opencv3.dir/main.cpp.o: CMakeFiles/learning_opencv3.dir/flags.make
 CMakeFiles/learning_opencv3.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/learning_opencv3.dir/main.cpp.o"
-	/Volumes/develop/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/learning_opencv3.dir/main.cpp.o -c /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/learning_opencv3.dir/main.cpp.o -c /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp
 
 CMakeFiles/learning_opencv3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/learning_opencv3.dir/main.cpp.i"
-	/Volumes/develop/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp > CMakeFiles/learning_opencv3.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp > CMakeFiles/learning_opencv3.dir/main.cpp.i
 
 CMakeFiles/learning_opencv3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/learning_opencv3.dir/main.cpp.s"
-	/Volumes/develop/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp -o CMakeFiles/learning_opencv3.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Volumes/develop/code-repository/practice-code/learning-opencv3/main.cpp -o CMakeFiles/learning_opencv3.dir/main.cpp.s
 
 # Object files for target learning_opencv3
 learning_opencv3_OBJECTS = \
@@ -79,50 +79,55 @@ learning_opencv3_EXTERNAL_OBJECTS =
 
 learning_opencv3: CMakeFiles/learning_opencv3.dir/main.cpp.o
 learning_opencv3: CMakeFiles/learning_opencv3.dir/build.make
-learning_opencv3: /usr/local/lib/libopencv_gapi.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_stitching.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_aruco.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_bgsegm.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_bioinspired.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_ccalib.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_dnn_objdetect.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_dpm.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_face.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_fuzzy.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_hfs.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_img_hash.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_line_descriptor.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_reg.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_rgbd.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_saliency.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_stereo.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_structured_light.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_superres.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_surface_matching.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_tracking.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_videostab.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_xfeatures2d.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_xobjdetect.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_xphoto.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_shape.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_phase_unwrapping.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_optflow.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_ximgproc.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_dnn.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_datasets.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_ml.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_plot.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_video.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_objdetect.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_calib3d.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_features2d.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_flann.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_highgui.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_videoio.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_imgcodecs.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_photo.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_imgproc.4.0.1.dylib
-learning_opencv3: /usr/local/lib/libopencv_core.4.0.1.dylib
+learning_opencv3: /usr/local/lib/libopencv_gapi.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_stitching.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_aruco.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_bgsegm.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_bioinspired.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_ccalib.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_dnn_objdetect.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_dnn_superres.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_dpm.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_face.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_freetype.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_fuzzy.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_hfs.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_img_hash.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_line_descriptor.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_quality.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_reg.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_rgbd.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_saliency.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_sfm.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_stereo.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_structured_light.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_superres.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_surface_matching.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_tracking.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_videostab.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_xfeatures2d.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_xobjdetect.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_xphoto.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_highgui.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_shape.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_datasets.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_plot.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_text.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_dnn.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_ml.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_phase_unwrapping.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_optflow.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_ximgproc.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_video.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_videoio.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_imgcodecs.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_objdetect.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_calib3d.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_features2d.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_flann.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_photo.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_imgproc.4.2.0.dylib
+learning_opencv3: /usr/local/lib/libopencv_core.4.2.0.dylib
 learning_opencv3: CMakeFiles/learning_opencv3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Volumes/develop/code-repository/practice-code/learning-opencv3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable learning_opencv3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/learning_opencv3.dir/link.txt --verbose=$(VERBOSE)

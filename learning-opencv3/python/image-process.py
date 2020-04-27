@@ -37,7 +37,11 @@ def crop(image):
     cv2.imshow("crop1", crop1)
     cv2.imshow("crop2", crop2)
     cv2.imshow("crop3", crop3)
+    path = '/Volumes/develop/code-repository/practice-code/learning-opencv3/resources/'
 
+    cv2.imwrite(path+"1.jpg", crop1)
+    cv2.imwrite(path+"2.jpg", crop2)
+    cv2.imwrite(path+"3.jpg", crop3)
 
 def puttext(image):
     x, y = 100, 100
@@ -67,9 +71,10 @@ if __name__ == '__main__':
     image = cv2.imread(filename=img_path)
 
     show_image(image)
-    # get_image_info(image)
-    # resize(image)
-    # crop(image)
+    get_image_info(image)
+    resize(image)
+    crop(image)
     puttext(image)
     addImage(image)
     cv2.waitKey(0)
+    cv2.dft()

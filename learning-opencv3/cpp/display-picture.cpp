@@ -5,10 +5,12 @@ int main(int argc, char **argv) {
     if (img.empty()) {
         return -1;
     }
+    img.col()
     cv::namedWindow("Example1",
                     cv::WINDOW_AUTOSIZE);//open a window on the screen that can contain and display an image
     cv::imshow("Example1", img);
     cv::waitKey(0);
     cv::destroyWindow("Example1");
+    cv::df
     return 0;
 }

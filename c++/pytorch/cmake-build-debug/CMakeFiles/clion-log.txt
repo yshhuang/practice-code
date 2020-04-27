@@ -1,0 +1,20 @@
+/Volumes/develop/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Volumes/develop/code-repository/practice-code/c++/pytorch
+CMake Error at CMakeLists.txt:4 (find_package):
+  By not providing "FindTorch.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Torch", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Torch" with any of
+  the following names:
+
+    TorchConfig.cmake
+    torch-config.cmake
+
+  Add the installation prefix of "Torch" to CMAKE_PREFIX_PATH or set
+  "Torch_DIR" to a directory containing one of the above files.  If "Torch"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Volumes/develop/code-repository/practice-code/c++/pytorch/cmake-build-debug/CMakeFiles/CMakeOutput.log".
