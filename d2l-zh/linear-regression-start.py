@@ -80,7 +80,7 @@ def sgd(params, lr, batch_size):
 
 
 if __name__ == '__main__':
-    # 生成数据集 y = Xw + b + ε,
+    # 1.生成数据集 y = Xw + b + ε,
     num_inputs = 2
     num_examples = 1000
     true_w = [2, -3.4]
@@ -89,20 +89,20 @@ if __name__ == '__main__':
     labels = true_w[0] * features[:, 0] + true_w[1] * features[:, 1] + true_b
     labels += nd.random.normal(scale=0.01, shape=labels.shape)
 
-    set_figsize()
-    plt.scatter(features[:, 1].asnumpy(), labels.asnumpy(), 1)
+    # set_figsize()
+    # plt.scatter(features[:, 1].asnumpy(), labels.asnumpy(), 1)
     # plt.show()
-    # 读取数据集
+    # 2.读取数据集
     batch_size = 10
     # for X, y in data_iter(batch_size, features, labels):
     #     print(X, y)
     #     break
-    # 初始化模型参数
+    # 3.初始化模型参数
     w = nd.random.normal(scale=0.01, shape=(num_inputs, 1))
     b = nd.zeros(shape=(1,))
     w.attach_grad()
     b.attach_grad()
-    # 训练模型
+    # 4.训练模型
     lr = 0.03
     num_epochs = 3
     net = linreg
