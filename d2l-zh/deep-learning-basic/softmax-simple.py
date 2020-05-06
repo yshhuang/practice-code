@@ -10,7 +10,6 @@ from mxnet import gluon, init
 from mxnet.gluon import loss as gloss, nn
 import fashion_MNIST as fM
 
-
 if __name__ == '__main__':
     # 1.初始化模型参数
     batch_size = 256

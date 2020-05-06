@@ -21,7 +21,8 @@ def relu(X):
 
 def net(X):
     X = X.reshape((-1, num_inputs))
-    H=relu()
+    H = relu(nd.dot(X, W1) + b1)
+    return nd.dot(H, W2) + b2
 
 
 if __name__ == '__main__':
@@ -36,4 +37,8 @@ if __name__ == '__main__':
     params = [W1, b2, W2, b2]
     for param in params:
         param.attach_grad()
-    # 2.定义激活函数
+    loss = gloss.SoftmaxCrossEntropyLoss()
+    # 2.训练模型
+    num_epochs, lr = 5, 0.5
+    d2l.train_ch3(net, test_iter, test_iter, loss, num_epochs, batch_size,
+                  params, lr)
