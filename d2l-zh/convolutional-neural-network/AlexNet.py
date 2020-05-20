@@ -14,7 +14,7 @@ import sys
 
 
 def load_data_fashion_mnist(batch_size, resize=None,
-        root=os.path.join('~', '.mxnet', 'databases', 'fashion-minst')):
+        root=os.path.join('~', '.mxnet', 'datasets', 'fashion-mnist')):
     root = os.path.expanduser(root)
     transformer = []
     if resize:
