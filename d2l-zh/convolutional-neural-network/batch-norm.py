@@ -2,7 +2,7 @@
 """
 @Time    : 2020-05-21 11:07
 @Author  : yshhuang@foxmail.com
-@File    : batch-norm-start.py
+@File    : batch-norm.py
 @Software: PyCharm
 """
 import d2lzh as d2l
@@ -80,3 +80,24 @@ if __name__ == '__main__':
     train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size)
     d2l.train_ch5(net, train_iter, test_iter, batch_size, trainer,
                   ctx, num_epochs)
+    print(net[1].gamma.data().reshape((-1,)), net[1].beta.data().reshape((-1,)))
+
+    net = nn.Sequential()
+    net.add(nn.Conv2D(6, kernel_size=5),
+            nn.BatchNorm(),
+            nn.Activation('sigmoid'),
+            nn.MaxPool2D(pool_size=2, strides=2),
+            nn.Conv2D(16, kernel_size=5),
+            nn.BatchNorm(),
+            nn.Activation('sigmoid'),
+            nn.MaxPool2D(pool_size=2, strides=2),
+            nn.Dense(120),
+            nn.BatchNorm(),
+            nn.Activation('sigmoid'),
+            nn.Dense(84),
+            nn.BatchNorm(),
+            nn.Activation('sigmoid'),
+            nn.Dense(10))
+    net.initialize(ctx=ctx, init=init.Xavier)
+    trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': lr})
+    print(net[1].gamma.data().reshape((-1,)), net[1].beta.data().reshape((-1,)))
