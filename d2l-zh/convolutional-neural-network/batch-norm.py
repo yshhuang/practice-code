@@ -102,3 +102,4 @@ if __name__ == '__main__':
     trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': lr})
     d2l.train_ch5(net, train_iter, test_iter, batch_size, trainer, ctx,
                   num_epochs)
+    print(net[1].gamma.data().reshape((-1,)), net[1].beta.data().reshape((-1,)))
