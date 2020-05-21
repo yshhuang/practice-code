@@ -68,5 +68,4 @@ if __name__ == '__main__':
     trainer = gluon.Trainer(net.collect_params(), 'sgd',
                             {'learning_rate': lr})
     train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size, resize=96)
-    d2l.train_ch5(net, train_iter, test_iter, batch_size, train_iter,
-                  ctx, num_epochs)
+    d2l.train_ch5(net, train_iter, test_iter, batch_size, trainer, ctx, num_epochs)
