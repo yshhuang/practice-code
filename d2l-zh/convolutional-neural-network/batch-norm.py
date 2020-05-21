@@ -100,4 +100,5 @@ if __name__ == '__main__':
             nn.Dense(10))
     net.initialize(ctx=ctx, init=init.Xavier())
     trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': lr})
-    print(net[1].gamma.data().reshape((-1,)), net[1].beta.data().reshape((-1,)))
+    d2l.train_ch5(net, train_iter, test_iter, batch_size, trainer, ctx,
+                  num_epochs)
