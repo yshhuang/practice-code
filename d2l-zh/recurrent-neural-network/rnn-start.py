@@ -49,7 +49,7 @@ def rnn(inputs, state, params):
 
 
 def predict_rnn(prefix, num_chars, rnn, params, init_rnn_state,
-        num_hiddens, vocab_size, ctx, idx_to_char, char_to_idx):
+                num_hiddens, vocab_size, ctx, idx_to_char, char_to_idx):
     """
     预测函数
     :param prefix:
@@ -94,8 +94,8 @@ def grad_clipping(params, theta, ctx):
 
 
 def train_and_predict_rnn(rnn, get_params, init_rnn_state, num_hiddens,
-        vocab_size, ctx, corpus, idx_to_char, char_to_idx, is_random_iter, num_epochs,
-        num_steps, lr, clipping_theta, batch_size, pred_period, pred_len, prefixes):
+                          vocab_size, ctx, corpus, idx_to_char, char_to_idx, is_random_iter, num_epochs,
+                          num_steps, lr, clipping_theta, batch_size, pred_period, pred_len, prefixes):
     """
     训练并预测
     :param rnn:
