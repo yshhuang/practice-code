@@ -2,7 +2,7 @@
 @Author: 	yshhuang@foxmail.com
 @Date: 2020-06-10 17:44:14
 @LastEditors: 	yshhuang@foxmail.com
-@LastEditTime: 2020-06-11 17:08:46
+@LastEditTime: 2020-06-11 18:12:35
 @FilePath: /d2l-zh/optimization-algorithm/sgd.py
 """
 import time
@@ -60,6 +60,7 @@ def train_ch7(trainer_fn, state, hyperparams, features, labels, batch_size=10, n
     d2l.plt.plot(np.linspace(0, num_epochs, len(ls)), ls)
     d2l.plt.xlabel('epoch')
     d2l.plt.ylabel('loss')
+    d2l.plt.show()
 
 
 def train_sgd(lr, batch_size, num_epochs=2):
@@ -72,3 +73,4 @@ if __name__ == "__main__":
     train_sgd(1, 1500, 6)
     train_sgd(0.005, 1)
     train_sgd(0.05, 10)
+

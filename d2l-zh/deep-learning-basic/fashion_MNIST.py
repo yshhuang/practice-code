@@ -1,3 +1,10 @@
+"""
+@Author: 	yshhuang@foxmail.com
+@Date: 2020-06-10 14:22:06
+@LastEditors: 	yshhuang@foxmail.com
+@LastEditTime: 2020-06-10 14:22:07
+@FilePath: /d2l-zh/deep-learning-basic/fashion_MNIST.py
+"""
 # encoding:utf-8
 """
 @Time    : 2020-04-27 18:45
@@ -38,8 +45,8 @@ if __name__ == '__main__':
     mnist_test = gdata.vision.FashionMNIST(train=False)
     print(len(mnist_train), len(mnist_test))
 
-    # X, y = mnist_train[0:9]
-    # show_fashion_mnist(X, get_fashion_mnist_labels(y))
+    X, y = mnist_train[0:9]
+    show_fashion_mnist(X, get_fashion_mnist_labels(y))
     batch_size = 256
     transformer = gdata.vision.transforms.ToTensor
     if sys.platform.startswith('win'):
