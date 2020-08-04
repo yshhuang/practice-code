@@ -1,3 +1,10 @@
+"""
+@Author: 	yshhuang@foxmail.com
+@Date: 2020-07-24 18:21:51
+@LastEditors: 	yshhuang@foxmail.com
+@LastEditTime: 2020-07-24 18:21:52
+@FilePath: /d2l-zh/convolutional-neural-network/LeNet.py
+"""
 # encoding:utf-8
 """
 @Time    : 2020-05-19 15:49
@@ -40,6 +47,8 @@ def train_ch5(net, train_iter, test_iter, batch_size, trainer, ctx, num_epochs):
             with autograd.record():
                 y_hat = net(X)
                 l = loss(y_hat, y).sum()
+            print(X.shape)
+            print(y_hat.shape)
             l.backward()
             trainer.step(batch_size)
             y = y.astype('float32')
